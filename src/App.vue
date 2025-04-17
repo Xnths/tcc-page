@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
   <h1>Proposta de trabalho</h1>
   <h2>Introdução</h2>
