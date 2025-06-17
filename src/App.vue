@@ -1,19 +1,83 @@
 <template>
-  <h1>MAC0499 - Trabalho de Formatura Supervisionado</h1>
-  <div class="c-name-display">
-    <span
-      ><strong>Formando:</strong> Jonathas Castilho -
-      <a href="mailto:jonathascastilho@usp.br">jonathascastilho@usp.br</a></span
-    >
-    <span
-      ><strong>Orientador:</strong> Eduardo Colli -
-      <a href="mailto:colli@ime.usp.br">colli@ime.usp.br</a></span
-    >
+  <div class="c-home">
+    <h1>MAC0500 - Trabalho de Formatura Supervisionado</h1>
+    <div class="c-name-display">
+      <span
+        ><strong>Autor:</strong> Jonathas Castilho -
+        <a href="mailto:jonathascastilho@usp.br"
+          >jonathascastilho@usp.br</a
+        ></span
+      >
+      <span
+        ><strong>Orientador:</strong> Eduardo Colli -
+        <a href="mailto:colli@ime.usp.br">colli@ime.usp.br</a></span
+      >
+    </div>
+    <div>
+      <h2>Resumo</h2>
+      <p>
+        Em 2013, consolidou-se a exposição Matemateca como Centro de Difusão e
+        Ensino Matemateca. A proposta é construir peças didáticas para o ensino
+        da matemática, materializando as entidades abstratas dessa ciência em um
+        acervo de peças lúdicas.
+      </p>
+      <p>
+        Recebendo visitantes de todas as idades, o foco dessa exposição é a
+        interatividade. Sua proposta sempre foi inovar através da aplicação de
+        técnicas artesanais e computacionais. Embora, hoje, seu amplo acervo
+        aborda diversos conceitos matemáticos, o professor orientador Dr.
+        Eduardo Colli, quer ir além. Por isso, a proposta de integrar ao espaço
+        físico, modelos tridimensionais. Disso surge a proposta do aplicativo
+        MatematecAR.
+      </p>
+      <p>
+        A principal preocupação desse projeto é disponibilizar e escalar um
+        aplicativo móvel que faz uso de técnicas de visão computacional. Um
+        grande desafio será realizar o tracking em tempo real das peças da
+        Matemateca. Embora já existam formas de realizá-lo, a depender do modelo
+        do dispositivo que está sendo usado, não podemos garantir que funcione.
+        Alternativas serão proposta, mas de toda forma o aplicativo dispensará a
+        presença constante de um mediador na exposição, o que permite exposições
+        mais longas e autonomia dos visitantes. De fato, qualquer um que esteja
+        visitando o instituto poderá interagir de forma independente com a
+        exposição.
+      </p>
+      <p>
+        No entanto, essa tecnologia não é amplamente explorada, o que dificulta
+        seu desenvolvimento. As ferramentas que estão disponíveis estão
+        limitadas aos sensores dos diversos modelos de smartphones que estão no
+        mercado. Então, desenvolver um aplicativo que seja acessível, compatível
+        com a maioria dos dispositivos, siga as metodologias ágeis, possibilite
+        integração contínua e outras boas práticas da engenharia de Software
+        entregando um aplicativo funcional são os desafios explorados neste
+        trabalho.
+      </p>
+      <p>
+        Portanto, ao final desse trabalho, deseja-se expandir as possibilidades
+        da Matemateca, garantindo interações que atravessam os limites da
+        realidade material. Além de explorar as novas peças virtuais que poderão
+        ser desenvolvidas com essa tecnologia em função da educação.
+      </p>
+    </div>
+    <div class="c-name-display">
+      <h2>Documentos</h2>
+      <a href="#proposta">📄 Proposta</a>
+    </div>
+    <div class="c-name-display">
+      <h2>Links</h2>
+      <a href="https://github.com/Lab3d-Matemateca/MatematecAR"
+        >📱 MatematecAR (Expo & Viro React)</a
+      >
+    </div>
   </div>
+  <br />
   <nav>
     <h2>Índice</h2>
     <ol>
       <li><a href="#cronograma">Cronograma geral</a></li>
+      <li>
+        <a href="#acompanhamento-1">Acompanhamento 1</a>
+      </li>
       <li><a href="#proposta">Proposta de Trabalho</a></li>
       <ul>
         <li><a href="#proposta-introducao">Introdução</a></li>
@@ -24,6 +88,7 @@
       </ul>
     </ol>
   </nav>
+  <hr />
   <section id="cronograma">
     <h2>Cronograma geral</h2>
     <table border="1" cellpadding="8" cellspacing="0">
@@ -117,6 +182,12 @@
       </tbody>
     </table>
   </section>
+  <hr />
+  <section id="acompanhamento-1">
+    <h2>Acompanhamento 1</h2>
+    <p></p>
+  </section>
+  <hr />
   <section id="proposta">
     <h2>Proposta de trabalho</h2>
     <h3 id="proposta-introducao">Introdução</h3>
@@ -233,18 +304,29 @@ h3 {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+
+.c-home {
+  padding: 2rem;
+  border: solid 1px #fafafa46;
+  border-radius: 2rem;
+  box-shadow: 4px 4px 2px #00000085;
+}
+
 .c-name-display {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: start;
 }
+
 nav ol {
   list-style: decimal;
   padding-left: 1.5em;
@@ -257,5 +339,11 @@ nav ol ol {
 
 nav ol li {
   text-align: start;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #ffffff44;
+  margin: 2em 0;
 }
 </style>
