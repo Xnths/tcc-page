@@ -1,3 +1,26 @@
+<script setup>
+import { useHead } from "@vueuse/head";
+
+useHead({
+  title: "TCC - MatematecAR",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Página do trabalho de formatura supervisionado do aluno Jonathas Castilho",
+    },
+    {
+      property: "og:title",
+      content: "TCC Jonathas - MatematecAR",
+    },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
+  ],
+});
+</script>
+
 <template>
   <div class="c-home">
     <h1>MAC0500 - Trabalho de Formatura Supervisionado</h1>
