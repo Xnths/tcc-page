@@ -1,8 +1,125 @@
 <template>
-  <section></section>
-  <section>
-    <h1>Proposta de trabalho</h1>
-    <h2>Introdução</h2>
+  <h1>MAC0499 - Trabalho de Formatura Supervisionado</h1>
+  <div class="c-name-display">
+    <span
+      ><strong>Formando:</strong> Jonathas Castilho -
+      <a href="mailto:jonathascastilho@usp.br">jonathascastilho@usp.br</a></span
+    >
+    <span
+      ><strong>Orientador:</strong> Eduardo Colli -
+      <a href="mailto:colli@ime.usp.br">colli@ime.usp.br</a></span
+    >
+  </div>
+  <nav>
+    <h2>Índice</h2>
+    <ol>
+      <li><a href="#cronograma">Cronograma geral</a></li>
+      <li><a href="#proposta">Proposta de Trabalho</a></li>
+      <ul>
+        <li><a href="#proposta-introducao">Introdução</a></li>
+        <li><a href="#proposta-contexto">Contexto</a></li>
+        <li>
+          <a href="#proposta-cronograma-resumido">Cronograma resumido</a>
+        </li>
+      </ul>
+    </ol>
+  </nav>
+  <section id="cronograma">
+    <h2>Cronograma geral</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Atividades</th>
+          <th>Janeiro</th>
+          <th>Fevereiro</th>
+          <th>Março</th>
+          <th>Abril</th>
+          <th>Maio</th>
+          <th>Junho</th>
+          <th>Julho</th>
+          <th>Agosto</th>
+          <th>Setembro</th>
+          <th>Outubro</th>
+          <th>Novembro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estudo do projeto atual</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Estudo das tecnologias disponíveis</td>
+          <td></td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Desenvolvimento</td>
+          <td></td>
+          <td></td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Monografia</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Apresentação</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>✔️</td>
+          <td>✔️</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="proposta">
+    <h2>Proposta de trabalho</h2>
+    <h3 id="proposta-introducao">Introdução</h3>
     <p>
       Na contemporaneidade, os produtos digitais interativos saturam o cotidiano
       de toda demografia global. Em particular, as aplicações móveis contribuem
@@ -44,7 +161,7 @@
       de design, propondo novas formas de interagir e aprender.
     </p>
     <h2>Proposta de trabalho</h2>
-    <h3>Contexto</h3>
+    <h3 id="proposta-contexto">Contexto</h3>
     <p>
       No Instituto de Matemática e Estatística, desde 2003, constrói-se um
       acervo de objetos interativos. Durante anos, professores, alunos e
@@ -75,7 +192,7 @@
       a computação sirva o propósito social de integração à comunidade externa à
       Universidade de São Paulo.
     </p>
-    <h3>Cronograma</h3>
+    <h3 id="proposta-cronograma-resumido">Cronograma resumido</h3>
     <p>
       Inicialmente, deseja-se aproveitar o que já foi definido anteriormente.
       Logo, começaremos a estudar as limitações da tecnologia de forma que ela
@@ -121,5 +238,24 @@ h3 {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.c-name-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+nav ol {
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+nav ol ol {
+  list-style: decimal;
+  margin-top: 0.25em;
+  padding-left: 1.5em;
+}
+
+nav ol li {
+  text-align: start;
 }
 </style>
