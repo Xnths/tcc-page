@@ -208,7 +208,48 @@ useHead({
   <hr />
   <section id="acompanhamento-1">
     <h2>Acompanhamento 1</h2>
-    <p></p>
+    <p>
+      Inicialmente, o professor Colli já estava desenvolvendo um aplicativo AR
+      para a Matemateca. A ideação não foi dos autores desse trabalho. Logo, já
+      haviam algumas tentativas da implementação. Após algumas conversas,
+      verificou-se a existência de um projeto em Unity, utilizando Vuforia. Como
+      o principal requisito é realizar o tracking das peças expostas, os plugins
+      escolhidos satisfaziam essa demanda. Para tanto, utilizou-se
+      <i>image tracking</i> em QR Code, cuja técnica consistem em identificar
+      uma imagem e defini-la como referência para posicionamento dos modelos 3D.
+      No entanto, isso não resolve outros problemas, como a fragilidade do
+      tracking.
+    </p>
+    <p>
+      Vulforia é uma SDK em Unity e possui algumas funcionalidades restritas a
+      planos de uso dela. Com ela podemos implementar um aplicativo de AR e já
+      modelar os objetos 3D na própria ferramenta. Além de também termos amplas
+      opções de funcionalidades para implementar uma cena AR. Embora possibilite
+      a simplificação de diversos processos que o desenvolvimento, a principal
+      preocupação de sua utilização é o versionamento. Ainda iremos explorar
+      como fazer isso, caso optemos por aderir a esse método de desenvolvimento.
+      No entanto, queremos evitá-la, pois foge um pouco do escopo do
+      desenvolvimento de aplicações móveis clássicas que aprendemos no curos de
+      computação.
+    </p>
+    <p>
+      Dado esse estranhamento, aventuramo-nos em outros frameworks e linguagens.
+      Primeriamente, buscamos uma API com biblioteca nativa para desenvolvimento
+      de AR em mobile. Encontramos duas, nomeadamente, ARCore e ARKit. Há
+      limitações quanto à sua utilização, pois apesar de o ARKit ser mais
+      robusto que o AR Core, não há compatibilidade Android. Não somente isso,
+      ao testarmos o desenvolvimento com o ARCore, foi possível verificar a
+      aversão dos donos do projeto em Unity quanto à complexidade de desenvolver
+      em Android Native. Por isso, logo mudamos de estratégia.
+    </p>
+    <p>
+      Por isso, novamente mudamos a abordagem. Como o React é amplamente
+      conhecido no mercado, criamos um novo repositório usando React Native. Com
+      ele é possível desenvolver aplicativos mobile para Android e iOS. Essa
+      solução expande a disponibilidade da aplicação e facilita o seu
+      desenvolvimento, uma vez que é familiar aos desenvolvedores. Por isso,
+      continuamos o desenvolvimento nele para testar as suas limitações
+    </p>
   </section>
   <hr />
   <section id="proposta">
