@@ -10,8 +10,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "composite": true,
-    "noEmit": false,
-    "allowImportingTsExtensions": false,
     "allowJs": true,
     "noImplicitAny": false
   },
