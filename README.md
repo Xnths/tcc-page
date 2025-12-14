@@ -1,5 +1,30 @@
-# Vue 3 + TypeScript + Vite
+## Deployment to GitHub Pages
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is configured to deploy to GitHub Pages using `gh-pages`.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+### Prerequisites
+
+- Node.js installed
+- Git initialized and connected to a GitHub repository
+
+### How to Deploy
+
+1.  **Run the deploy script:**
+
+    ```bash
+    npm run deploy
+    ```
+
+    This script will:
+    - Build the project using `npm run build`.
+    - Push the contents of the `dist` folder to the `gh-pages` branch of your repository.
+
+2.  **Configure GitHub Pages:**
+
+    - Go to your repository on GitHub.
+    - Navigate to **Settings** > **Pages**.
+    - Under **Source**, select **Deploy from a branch**.
+    - Select the `gh-pages` branch and the `/ (root)` folder.
+    - Click **Save**.
+
+Your application will be available at `https://Xnths.github.io/tcc-page/`.

@@ -25,7 +25,8 @@ useHead({
 
 <template>
   <div class="c-home">
-    <h1>MAC0500 - Capstone Project focused on University Extension</h1>
+    <h1>Agile as Rule-Governed Behavior: A Radical Behaviorist Examination of Software Development Practices in AR environment</h1>
+    <h2>MAC0500 - Capstone Project focused on University Extension</h2>
     <div class="c-name-display">
       <span
         ><strong>Author:</strong> Jonathas Castilho -
@@ -46,10 +47,16 @@ useHead({
     </div>
     <div class="c-name-display">
       <h2>Documents</h2>
-      <a href="#proposta">📄 Proposal</a>
+      <a href="#proposta">📄 Initial proposal</a>
+      <a :href="monography" download>
+  📘 Download Monography (PDF)
+</a>
+<a href="https://github.com/Lab3d-Matemateca/MatematecAR---Unity">
+  🎮📱 MatematecAR — Unity + ARCore
+</a>
     </div>
     <div class="c-name-display">
-      <h2>🔗 Links</h2>
+      <h2>🔗 Other links</h2>
 
 <a href="https://github.com/Lab3d-Matemateca/MatematecAR/tree/feat-augmented-image">
   🤖📱 MatematecAR — Native Android (ARCore)
@@ -57,10 +64,6 @@ useHead({
 
 <a href="https://github.com/Lab3d-Matemateca/MatematecAR">
   ⚛️📱 MatematecAR — React Native (Expo & Viro)
-</a>
-
-<a href="https://github.com/Lab3d-Matemateca/MatematecAR---Unity">
-  🎮📱 MatematecAR — Unity + ARCore
 </a>
 
 <a href="https://www.figma.com/proto/V6hGEGrTygsG9C149FaMM4/MatematecAR?node-id=3-81&starting-point-node-id=3%3A81">
@@ -75,26 +78,19 @@ useHead({
   🧪📦 Prototypes & Demonstrations
 </a>
 
-<a :href="monography" download>
-  📘 Download Monography (PDF)
-</a>
-
     </div>
   </div>
   <br />
   <nav>
     <h2>Índice</h2>
     <ol>
-      <li><a href="#cronograma">Cronograma geral</a></li>
-      <li>
-        <a href="#acompanhamento-1">Acompanhamento 1</a>
-      </li>
-      <li><a href="#proposta">Proposta de Trabalho</a></li>
+      <li><a href="#cronograma">General Timeline</a></li>
+      <li><a href="#proposta">Initial proposal</a></li>
       <ul>
-        <li><a href="#proposta-introducao">Introdução</a></li>
-        <li><a href="#proposta-contexto">Contexto</a></li>
+        <li><a href="#proposta-introducao">Introduction</a></li>
+        <li><a href="#proposta-contexto">Context</a></li>
         <li>
-          <a href="#proposta-cronograma-resumido">Cronograma resumido</a>
+          <a href="#proposta-cronograma-resumido">General Timeline</a>
         </li>
       </ul>
     </ol>
