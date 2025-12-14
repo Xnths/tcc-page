@@ -1,4 +1,5 @@
 <script setup>
+import monography from "/public/monography.pdf";
 import { useHead } from "@vueuse/head";
 
 useHead({
@@ -19,78 +20,65 @@ useHead({
     },
   ],
 });
+
 </script>
 
 <template>
   <div class="c-home">
-    <h1>MAC0500 - Trabalho de Formatura Supervisionado</h1>
+    <h1>MAC0500 - Capstone Project focused on University Extension</h1>
     <div class="c-name-display">
       <span
-        ><strong>Autor:</strong> Jonathas Castilho -
+        ><strong>Author:</strong> Jonathas Castilho -
         <a href="mailto:jonathascastilho@usp.br"
           >jonathascastilho@usp.br</a
         ></span
       >
       <span
-        ><strong>Orientador:</strong> Eduardo Colli -
+        ><strong>Supervisor:</strong> Eduardo Colli -
         <a href="mailto:colli@ime.usp.br">colli@ime.usp.br</a></span
       >
     </div>
     <div>
-      <h2>Resumo</h2>
+      <h2>Abstract</h2>
       <p>
-        Em 2013, consolidou-se a exposição Matemateca como Centro de Difusão e
-        Ensino Matemateca. A proposta é construir peças didáticas para o ensino
-        da matemática, materializando as entidades abstratas dessa ciência em um
-        acervo de peças lúdicas.
-      </p>
-      <p>
-        Recebendo visitantes de todas as idades, o foco dessa exposição é a
-        interatividade. Sua proposta sempre foi inovar através da aplicação de
-        técnicas artesanais e computacionais. Embora, hoje, seu amplo acervo
-        aborda diversos conceitos matemáticos, o professor orientador Dr.
-        Eduardo Colli, quer ir além. Por isso, a proposta de integrar ao espaço
-        físico, modelos tridimensionais. Disso surge a proposta do aplicativo
-        MatematecAR.
-      </p>
-      <p>
-        A principal preocupação desse projeto é disponibilizar e escalar um
-        aplicativo móvel que faz uso de técnicas de visão computacional. Um
-        grande desafio será realizar o tracking em tempo real das peças da
-        Matemateca. Embora já existam formas de realizá-lo, a depender do modelo
-        do dispositivo que está sendo usado, não podemos garantir que funcione.
-        Alternativas serão proposta, mas de toda forma o aplicativo dispensará a
-        presença constante de um mediador na exposição, o que permite exposições
-        mais longas e autonomia dos visitantes. De fato, qualquer um que esteja
-        visitando o instituto poderá interagir de forma independente com a
-        exposição.
-      </p>
-      <p>
-        No entanto, essa tecnologia não é amplamente explorada, o que dificulta
-        seu desenvolvimento. As ferramentas que estão disponíveis estão
-        limitadas aos sensores dos diversos modelos de smartphones que estão no
-        mercado. Então, desenvolver um aplicativo que seja acessível, compatível
-        com a maioria dos dispositivos, siga as metodologias ágeis, possibilite
-        integração contínua e outras boas práticas da engenharia de Software
-        entregando um aplicativo funcional são os desafios explorados neste
-        trabalho.
-      </p>
-      <p>
-        Portanto, ao final desse trabalho, deseja-se expandir as possibilidades
-        da Matemateca, garantindo interações que atravessam os limites da
-        realidade material. Além de explorar as novas peças virtuais que poderão
-        ser desenvolvidas com essa tecnologia em função da educação.
+        The development of augmented reality applications is characterized by high variability, technical constraints, and frequent environmental change. In the absence of an explicit development process, such variability tends to generate disorganized practices that fail to produce software increments with observable value for the client. This work examines agile software development as a set of rule-governed cultural practices that organize variation and increase the probability of functional outcomes. Drawing on radical behaviorism, agile practices are analyzed as arrangements of contingencies that shape developer behavior through short feedback cycles, rapid contact with consequences, and reinforcement of effective responses. The analysis is grounded in a case study of MatematecAR, an augmented reality application developed for a mathematical exhibition. By applying agile artifacts and ceremonies to the project, this study evaluates how reinforcement-based practices support the selection and retention of productive behaviors in an AR development environment, reducing the disruptive effects of change while preserving adaptive variation.  
       </p>
     </div>
     <div class="c-name-display">
-      <h2>Documentos</h2>
-      <a href="#proposta">📄 Proposta</a>
+      <h2>Documents</h2>
+      <a href="#proposta">📄 Proposal</a>
     </div>
     <div class="c-name-display">
-      <h2>Links</h2>
-      <a href="https://github.com/Lab3d-Matemateca/MatematecAR"
-        >📱 MatematecAR (Expo & Viro React)</a
-      >
+      <h2>🔗 Links</h2>
+
+<a href="https://github.com/Lab3d-Matemateca/MatematecAR/tree/feat-augmented-image">
+  🤖📱 MatematecAR — Native Android (ARCore)
+</a>
+
+<a href="https://github.com/Lab3d-Matemateca/MatematecAR">
+  ⚛️📱 MatematecAR — React Native (Expo & Viro)
+</a>
+
+<a href="https://github.com/Lab3d-Matemateca/MatematecAR---Unity">
+  🎮📱 MatematecAR — Unity + ARCore
+</a>
+
+<a href="https://www.figma.com/proto/V6hGEGrTygsG9C149FaMM4/MatematecAR?node-id=3-81&starting-point-node-id=3%3A81">
+  🎨🧩 UI Layout Design (Figma Prototype)
+</a>
+
+<a href="https://www.figma.com/board/TFvkX8LncqEaK2aDdQRW0f/Matemateca?node-id=0-1&t=kW1vR3laIczurWay-1">
+  🗂️🌀 Scrum Board (Figma)
+</a>
+
+<a href="https://drive.google.com/drive/folders/1BotxlF5em9nx7_wIVwf2H_ROSyHLLs7J?usp=sharing">
+  🧪📦 Prototypes & Demonstrations
+</a>
+
+<a :href="monography" download>
+  📘 Download Monography (PDF)
+</a>
+
     </div>
   </div>
   <br />
@@ -113,27 +101,27 @@ useHead({
   </nav>
   <hr />
   <section id="cronograma">
-    <h2>Cronograma geral</h2>
+    <h2>General Timeline</h2>
     <table border="1" cellpadding="8" cellspacing="0">
       <thead>
         <tr>
-          <th>Atividades</th>
-          <th>Janeiro</th>
-          <th>Fevereiro</th>
-          <th>Março</th>
-          <th>Abril</th>
-          <th>Maio</th>
-          <th>Junho</th>
-          <th>Julho</th>
-          <th>Agosto</th>
-          <th>Setembro</th>
-          <th>Outubro</th>
-          <th>Novembro</th>
+          <th>Activities</th>
+          <th>January</th>
+          <th>February</th>
+          <th>March</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+          <th>July</th>
+          <th>August</th>
+          <th>September</th>
+          <th>October</th>
+          <th>November</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Estudo do projeto atual</td>
+          <td>Study of the current project</td>
           <td>✔️</td>
           <td>✔️</td>
           <td></td>
@@ -147,7 +135,7 @@ useHead({
           <td></td>
         </tr>
         <tr>
-          <td>Estudo das tecnologias disponíveis</td>
+          <td>Study of available technologies</td>
           <td></td>
           <td>✔️</td>
           <td>✔️</td>
@@ -161,7 +149,7 @@ useHead({
           <td></td>
         </tr>
         <tr>
-          <td>Desenvolvimento</td>
+          <td>Development</td>
           <td></td>
           <td></td>
           <td>✔️</td>
@@ -175,7 +163,7 @@ useHead({
           <td></td>
         </tr>
         <tr>
-          <td>Monografia</td>
+          <td>Monography</td>
           <td></td>
           <td></td>
           <td></td>
@@ -189,7 +177,7 @@ useHead({
           <td></td>
         </tr>
         <tr>
-          <td>Apresentação</td>
+          <td>Defense</td>
           <td></td>
           <td></td>
           <td></td>
@@ -206,146 +194,156 @@ useHead({
     </table>
   </section>
   <hr />
+  <section id="acompanhamento-2">
+    <h2>Final Follow-up</h2>
+    <p>
+  After evaluating the challenges of AR development, the project was forced to
+  change its focus. The absence of a formal development methodology prevented
+  the application from evolving as expected, resulting in months of effort with
+  little progress toward viable prototypes or meaningful testing. Consequently,
+  the initial proposal was compromised, motivating a shift in emphasis toward
+  restructuring and improving the development process itself.
+</p>
+  </section>
   <section id="acompanhamento-1">
-    <h2>Acompanhamento 1</h2>
-    <p>
-      Inicialmente, o professor Colli já estava desenvolvendo um aplicativo AR
-      para a Matemateca. A ideação não foi dos autores desse trabalho. Logo, já
-      haviam algumas tentativas da implementação. Após algumas conversas,
-      verificou-se a existência de um projeto em Unity, utilizando Vuforia. Como
-      o principal requisito é realizar o tracking das peças expostas, os plugins
-      escolhidos satisfaziam essa demanda. Para tanto, utilizou-se
-      <i>image tracking</i> em QR Code, cuja técnica consistem em identificar
-      uma imagem e defini-la como referência para posicionamento dos modelos 3D.
-      No entanto, isso não resolve outros problemas, como a fragilidade do
-      tracking.
-    </p>
-    <p>
-      Vulforia é uma SDK em Unity e possui algumas funcionalidades restritas a
-      planos de uso dela. Com ela podemos implementar um aplicativo de AR e já
-      modelar os objetos 3D na própria ferramenta. Além de também termos amplas
-      opções de funcionalidades para implementar uma cena AR. Embora possibilite
-      a simplificação de diversos processos que o desenvolvimento, a principal
-      preocupação de sua utilização é o versionamento. Ainda iremos explorar
-      como fazer isso, caso optemos por aderir a esse método de desenvolvimento.
-      No entanto, queremos evitá-la, pois foge um pouco do escopo do
-      desenvolvimento de aplicações móveis clássicas que aprendemos no curos de
-      computação.
-    </p>
-    <p>
-      Dado esse estranhamento, aventuramo-nos em outros frameworks e linguagens.
-      Primeriamente, buscamos uma API com biblioteca nativa para desenvolvimento
-      de AR em mobile. Encontramos duas, nomeadamente, ARCore e ARKit. Há
-      limitações quanto à sua utilização, pois apesar de o ARKit ser mais
-      robusto que o AR Core, não há compatibilidade Android. Não somente isso,
-      ao testarmos o desenvolvimento com o ARCore, foi possível verificar a
-      aversão dos donos do projeto em Unity quanto à complexidade de desenvolver
-      em Android Native. Por isso, logo mudamos de estratégia.
-    </p>
-    <p>
-      Por isso, novamente mudamos a abordagem. Como o React é amplamente
-      conhecido no mercado, criamos um novo repositório usando React Native. Com
-      ele é possível desenvolver aplicativos mobile para Android e iOS. Essa
-      solução expande a disponibilidade da aplicação e facilita o seu
-      desenvolvimento, uma vez que é familiar aos desenvolvedores. Por isso,
-      continuamos o desenvolvimento nele para testar as suas limitações
-    </p>
-  </section>
-  <hr />
-  <section id="proposta">
-    <h2>Proposta de trabalho</h2>
-    <h3 id="proposta-introducao">Introdução</h3>
-    <p>
-      Na contemporaneidade, os produtos digitais interativos saturam o cotidiano
-      de toda demografia global. Em particular, as aplicações móveis contribuem
-      para o conforto, aprendizado e recreação dos usuários. A tecnologia chega
-      até a extrapolar o mundo virtual e se mesclar no mundo material. QR Codes,
-      por exemplo, auxiliam na comunicação digital. Basta apontar a câmera para
-      que o dispositivo interaja com a realidade e direcione o usuário para o
-      mundo virtual.
-    </p>
-    <p>
-      Essa mescla se tornou mais nítida com o avanço das técnicas de visão
-      computacional. Forçosamente, surgiram aplicativos centrados nessa
-      tecnologia. Temos, então, objetos do mundo virtual que interagem com o
-      mundo físico e vice-versa. No British Museum, por exemplo, há
-      possibilidade de alugar um tablet com um aplicativo personalizado
-      instalado no dispositivo. Nele os visitantes podem obter mais informações
-      sobre elas ao usar a câmera do dispositivo.
-    </p>
-    <p>
-      Não precisa se distanciar da realidade nacional. A professora Giselle
-      Beiguelman da Faculdade de Arquitetura e Urbanismo (FAU - USP) realizou o
-      projeto demonumentaRA. Análogo, ao museu britânico, utilizou-se realidade
-      aumentada para mesclar o físico e o virtual. Porém, o propósito foi
-      diferente. Ao invés de objetos físicos serem incrementados, a professora
-      propôs trazer monumentos arquitetônicos para serem postos no campus da
-      Universidade. Então, na praça do relógio foram instaladas placas indicando
-      a “existência” deles. Ao transeunte desavisado não se observa nada.
-      Necessitava-se que o observador instalasse o aplicativo desenvolvido pela
-      FAU, a fim de ver os objetos. Pela câmera viam-se os modelos como se
-      estivessem no espaço físico realmente.
-    </p>
-    <p>
-      Inserido nesse contexto, integra-se essa mesma tecnologia na educação. A
-      Matemateca, como um pequeno Museu matemático, planeja usufruir da
-      realidade aumentada. As peças interativas já servem o propósito de
-      materializar as abstrações matemáticas para seus visitantes não
-      acadêmicos. No entanto, com AR será possível realizar muitos outros
-      avanços para corroborar nessa iniciativa. Ampliam-se, com isso, as opções
-      de design, propondo novas formas de interagir e aprender.
-    </p>
-    <h2>Proposta de trabalho</h2>
-    <h3 id="proposta-contexto">Contexto</h3>
-    <p>
-      No Instituto de Matemática e Estatística, desde 2003, constrói-se um
-      acervo de objetos interativos. Durante anos, professores, alunos e
-      artesãos contribuíram complementando esse pequeno museu com tabuleiros
-      lúdicos, formas geométricas e demonstrações de conceitos matemáticos,
-      cujos mistérios velados em equações, filosofias e abstrações se desnudam
-      na frente dos visitantes. Embora o projeto disponha de monitores
-      voluntários, os quais mediam as visitas, inviabiliza-se sua presença
-      permanente. De fato, dispor de alguém durante todo o período em que a
-      Matemateca está montada no instituto não é possível, pois ficam-se dias ou
-      até meses sem previsão de sua retirada do saguão do Bloco B.
-    </p>
-    <p>
-      Por isso, há a necessidade de alternativas para a mediação. Pensando
-      nisso, o professor Eduardo Colli consolidou um projeto para integrar AR
-      (Augmented Reality) nas peças. Junto ao Lab3D começou-se o desenvolvimento
-      de um aplicativo utilizando Unity com Vuforia. Essa opção mais simples
-      para ser desenvolvida por pessoas que não são da computação pareceu uma
-      primeira alternativa. No entanto, o fluxo de desenvolvimento com essa
-      ferramenta não consegue se sustentar para se tornar um aplicativo móvel
-      com entrega contínua (CI/CD).
-    </p>
-    <p>
-      Deseja-se, portanto, adotar métodos de desenvolvimento mais rigorosos.
-      Aplicando conceitos de visão computacional e adotando boas práticas de
-      desenvolvimento de software em larga escala, esse presente trabalho tem
-      por objetivo colaborar com o projeto da Matemateca, contribuindo para que
-      a computação sirva o propósito social de integração à comunidade externa à
-      Universidade de São Paulo.
-    </p>
-    <h3 id="proposta-cronograma-resumido">Cronograma resumido</h3>
-    <p>
-      Inicialmente, deseja-se aproveitar o que já foi definido anteriormente.
-      Logo, começaremos a estudar as limitações da tecnologia de forma que ela
-      seja acessível ao público geral. Isso significa que queremos
-      disponibilizar ao final desse projeto um aplicativo que possa ser
-      utilizado pelos smartphones comuns sem exclusão de nenhum usuário por
-      funcionalidade baseado em sistema operacional ou sensores.
-    </p>
-    <p>
-      Depois, queremos definir cenas a serem implementadas. As decisões de
-      design contarão com a colaboração da equipe do Lab 3D e orientação do
-      professor Eduardo Colli. Embora não seja o foco, iremos nos ocupar em
-      seguir boas práticas de usabilidade. Isso significa que teremos o cuidado
-      de refinar qualquer ideia proposta antes de prosseguir para a
-      implementação. Por fim, é fundamental seguir as metodologias ágeis.
-      Portanto, teremos sprints que ficarão documentadas no site do TCC.
-    </p>
-  </section>
+  <h2>First Follow-up</h2>
+  <p>
+    Initially, Professor Colli was already developing an AR application for the
+    Matemateca. The idea did not originate with the authors of this work. Some
+    implementation attempts had already been made. After a few conversations,
+    it was verified that there was a project in Unity using Vuforia. As the main
+    requirement is to perform tracking of the exhibited pieces, the chosen
+    plugins satisfied this demand. For this purpose, <i>image tracking</i> was
+    used with QR Codes, a technique that consists of identifying an image and
+    defining it as a reference for positioning 3D models. However, this does
+    not solve other problems, such as the fragility of the tracking.
+  </p>
+  <p>
+    Vuforia is an SDK in Unity and has some functionalities restricted to its
+    usage plans. With it, one can implement an AR application and already model
+    3D objects within the tool itself. In addition, there are broad options of
+    features to implement an AR scene. Although it enables the simplification
+    of several development processes, the main concern regarding its use is
+    versioning. We will still explore how to handle this if we choose to adopt
+    this development method. However, we want to avoid it, as it deviates
+    somewhat from the scope of classic mobile application development that we
+    learned in the computer science course.
+  </p>
+  <p>
+    Given this estrangement, we ventured into other frameworks and languages.
+    Initially, we sought an API with a native library for mobile AR development.
+    We found two, namely ARCore and ARKit. There are limitations regarding their
+    use, since although ARKit is more robust than ARCore, it lacks Android
+    compatibility. Not only that, when testing development with ARCore, it was
+    possible to observe the aversion of the Unity project owners to the
+    complexity of developing in Android Native. Therefore, we soon changed our
+    strategy.
+  </p>
+  <p>
+    Thus, we changed the approach once again. As React is widely known in the
+    market, we created a new repository using React Native. With it, it is
+    possible to develop mobile applications for Android and iOS. This solution
+    expands the availability of the application and facilitates its
+    development, since it is familiar to developers. Therefore, we continued
+    development with it to test its limitations.
+  </p>
+</section>
+<hr />
+<section id="proposta">
+  <h2>Work Proposal</h2>
+  <h3 id="proposta-introducao">Introduction</h3>
+  <p>
+    In contemporary times, interactive digital products saturate the daily
+    lives of all global demographics. In particular, mobile applications
+    contribute to users’ comfort, learning, and recreation. Technology even
+    extrapolates the virtual world and merges with the material world. QR Codes,
+    for example, assist in digital communication. One simply points the camera
+    and the device interacts with reality, directing the user to the virtual
+    world.
+  </p>
+  <p>
+    This blend has become clearer with advances in computer vision techniques.
+    Inevitably, applications centered on this technology have emerged. Thus, we
+    have objects from the virtual world that interact with the physical world
+    and vice versa. At the British Museum, for example, it is possible to rent a
+    tablet with a customized application installed on the device. With it,
+    visitors can obtain more information about the exhibits by using the
+    device’s camera.
+  </p>
+  <p>
+    There is no need to distance ourselves from the national context. Professor
+    Giselle Beiguelman from the Faculty of Architecture and Urbanism (FAU - USP)
+    carried out the demonumentaRA project. Analogous to the British museum,
+    augmented reality was used to blend the physical and the virtual. However,
+    the purpose was different. Instead of augmenting physical objects, the
+    professor proposed bringing architectural monuments to be placed on the
+    university campus. Thus, signs were installed at the Clock Square indicating
+    their “existence.” To the unsuspecting passerby, nothing is observed. It was
+    necessary for the observer to install the application developed by FAU in
+    order to see the objects. Through the camera, the models appeared as if they
+    were actually in the physical space.
+  </p>
+  <p>
+    Inserted into this context, the same technology is integrated into
+    education. The Matemateca, as a small mathematical museum, plans to take
+    advantage of augmented reality. The interactive pieces already serve the
+    purpose of materializing mathematical abstractions for its non-academic
+    visitors. However, with AR it will be possible to achieve many other
+    advances to support this initiative. This expands design options, proposing
+    new ways to interact and learn.
+  </p>
+
+  <h3 id="proposta-contexto">Context</h3>
+  <p>
+    At the Institute of Mathematics and Statistics, since 2003, a collection of
+    interactive objects has been built. Over the years, professors, students,
+    and artisans have contributed by complementing this small museum with
+    playful boards, geometric shapes, and demonstrations of mathematical
+    concepts, whose mysteries—veiled in equations, philosophies, and
+    abstractions—are unveiled before visitors. Although the project has
+    volunteer monitors who mediate visits, their permanent presence is
+    unfeasible. In fact, having someone available throughout the entire period
+    in which the Matemateca is installed at the institute is not possible, since
+    it may remain for days or even months without any forecast of removal from
+    the lobby of Block B.
+  </p>
+  <p>
+    Therefore, there is a need for alternatives for mediation. With this in
+    mind, Professor Eduardo Colli consolidated a project to integrate AR
+    (Augmented Reality) into the pieces. Together with Lab3D, development of an
+    application using Unity with Vuforia began. This simpler option, more
+    accessible to people outside computer science, seemed like an initial
+    alternative. However, the development flow with this tool cannot be
+    sustained to become a mobile application with continuous delivery (CI/CD).
+  </p>
+  <p>
+    It is therefore desired to adopt more rigorous development methods. By
+    applying computer vision concepts and adopting good practices for large-
+    scale software development, this work aims to collaborate with the
+    Matemateca project, contributing so that computing serves the social
+    purpose of integration with the community external to the University of
+    São Paulo.
+  </p>
+
+  <h3 id="proposta-cronograma-resumido">Summary Schedule</h3>
+  <p>
+    Initially, the intention is to take advantage of what has already been
+    defined previously. Thus, we will begin by studying the limitations of the
+    technology so that it is accessible to the general public. This means that,
+    by the end of this project, we want to make available an application that
+    can be used on common smartphones without excluding any user due to
+    operating system– or sensor-based functionality.
+  </p>
+  <p>
+    Afterwards, we want to define the scenes to be implemented. Design
+    decisions will involve collaboration with the Lab 3D team and guidance
+    from Professor Eduardo Colli. Although it is not the focus, we will be
+    concerned with following good usability practices. This means that we will
+    take care to refine any proposed idea before proceeding to implementation.
+    Finally, it is essential to follow agile methodologies. Therefore, we will
+    have sprints that will be documented on the TCC website.
+  </p>
+</section>
 </template>
 
 <style scoped>
